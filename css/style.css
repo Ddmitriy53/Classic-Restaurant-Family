@@ -663,6 +663,10 @@ img {
   padding: 70px 0 35px 0;
 }
 
+.footer-info__logo {
+  margin-left: -56px;
+}
+
 .footer-info__author::after {
   content: '.';
   color: #E45759;
