@@ -4,97 +4,338 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Parallax Js</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Classic - сім'я ресторанів</title>
+  <link rel="icon" href="img/favicon.ico" type=" image/x-icon">
+  <link rel="stylesheet" type="text/css" href="css/slick.css">
   <link rel="stylesheet" href="fonts/fonts.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
   <div class="first-block">
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <nav class="nav">
+            <div class="nav__links">
+              <a href="#" class="nav__link">Payment</a>
+              <a href="#" class="nav__link nav__link-active">About us</a>
+              <a href="#" class="nav__link">Contacts</a>
+            </div>
+          </nav>
+          <div class="logo">
+            <a href="#" class="logo__link">
+              <img src="img/logo.png" alt="Classic - сім'я ресторанів" class="logo__img">
+            </a>
+          </div>
+          <div class="info">
+            <div class="info__timetable">Daily 11 a.m. - 9 p.m.</div>
 
-    <div class="container">
-      <header class="header">
+            <div class="info__phone">
+              <a class="info__link" href="tel:+380800330898">0 800 33 08 98</a>
+            </div>
 
-        <div class="nav">
-          <div class="nav__links">
-            <a href="#" class="nav__link">Payment</a>
-            <a href="#" class="nav__link">About us</a>
-            <a href="#" class="nav__link">Contacts</a>
           </div>
         </div>
+      </div>
+    </header>
 
-        <div class="logo">
-          <a href="#" class="logo__link">
-            <img src="img/logo.png" alt="Classic" class="logo__img">
-          </a>
+    <section class="hero">
+      <div class="container">
+        <div class="hero-text">
+          <h2 class="h2-title hero-text__title">Food delivery in Kovel</h2>
+          <p class="hero-text__paragraph">If you decide to relax or have unexpected guests, call us.<br>
+            We make sure that your vacation is comfortable, enjoyable and delicious</p>
         </div>
-
-        <div class="info">
-          <div class="info__timetable">Daily 11am - 9pm</div>
-          <div class="info__phone">
-            <a class="info__link" href="tel:+380800330898">0 800 33 08 98</a>
+      </div>
+      <div id="scene" class="scene-1">
+        <div data-depth="0.10" class="layer layer-pizza">
+          <img class="layer-pizza__img" src="img/hero/pizza.png" alt="Pizza">
+          <div class="layer-pizza__info">When ordering from <br> <strong class="layer-pizza__price">700 UAH</strong>
+            , delivery is free
           </div>
         </div>
-
-      </header>
-
-      <div class="about">
-        <h2 class="h2-text about__h2">Food delivery in Kovel</h2>
-        <p class="about__p">If you decide to relax or have unexpected guests, call us. We make <br>
-          sure that your vacation is comfortable, enjoyable and delicious</p>
-      </div>
-    </div>
-
-    <div class="scene">
-
-      <div class="layer layer-tomato" data-speed="30">
-        <img class="layer__img-tomato" src="img/tomato.png" alt="">
-      </div>
-
-      <div class="layer layer-mushroom" data-speed="100">
-        <img class="layer__img-mushroom" src="img/mushroom.png" alt="">
-      </div>
-
-      <div class="layer layer-pepper-1" data-speed="50">
-        <img class="layer__img-pepper-1" src="img/pepper-1.png" alt="">
-      </div>
-
-      <div class="layer layer-pepper-blurry-1" data-speed="50">
-        <img class="layer__img-pepper-blurry" src="img/pepper-blurry.png" alt="">
-      </div>
-
-      <div class="layer layer-flour" data-speed="20">
-        <img class="layer__img-flour" src="img/flour.png" alt="">
-      </div>
-
-      <div class="layer layer-pizza" data-speed="20">
-        <img class="layer__img-pizza" src="img/pizza.png" alt="">
-        <div class="del-info">When ordering from <br> <strong class="del-info__price">700 UAH</strong>, delivery is free
+        <div data-depth="0.20" class="layer layer-flour">
+          <img class="layer-flour__img" src="img/hero/flour.png" alt="Flour">
+        </div>
+        <div data-depth="0.60" class="layer layer-pepper">
+          <img class="layer-pepper__img" src="img/hero/pepper.png" alt="Pepper">
+        </div>
+        <div data-depth="1.00" class="layer layer-vegitables">
+          <img class="layer-vegitables__img" src="img/hero/vegitables.png" alt="Vegitables">
         </div>
       </div>
-
-      <div class="layer layer-pepper-2" data-speed="50">
-        <img class="layer__img-pepper-2" src="img/pepper-2.png" alt="">
-      </div>
-
-      <div class="layer layer-pepper-blurry-2" data-speed="50">
-        <img class="layer__img-pepper-blurry" src="img/pepper-blurry.png" alt="">
-      </div>
-
-      <div class="layer layer-cucumber" data-speed="100">
-        <img class="layer__img-cucumber" src="img/cucumber.png" alt="">
-      </div>
-
-    </div>
-
+    </section>
   </div>
 
   <div class="second-block">
+    <div class="container">
 
+      <section class="dishes">
+
+        <h2 class="h2-title dishes__title">Popular dishes</h2>
+
+        <div class="info-btns">
+          <div class="basket-main">
+            <div class="basket-main__total">=&nbsp;476&nbsp;&#8372;</div>
+            <button class="basket-main__img">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M10 2C9.44772 2 9 2.44772 9 3V4H15V3C15 2.44772 14.5523 2 14 2H10ZM17 4V3C17 1.34315 15.6569 0 14 0H10C8.34315 0 7 1.34315 7 3V4H5C3.34315 4 2 5.34315 2 7V21C2 22.6569 3.34315 24 5 24H19C20.6569 24 22 22.6569 22 21V7C22 5.34315 20.6569 4 19 4H17ZM5 6C4.44772 6 4 6.44772 4 7V21C4 21.5523 4.44772 22 5 22H19C19.5523 22 20 21.5523 20 21V7C20 6.44772 19.5523 6 19 6H5Z"
+                  fill="#F7A17C" />
+              </svg>
+            </button>
+          </div>
+
+          <div class="info__phone--small">
+            <a class="info__link--small" href="tel:+380800330898"></a>
+          </div>
+
+        </div>
+
+        <div class="dishes-menu">
+          <a href="#" class="dishes-menu__item dishes-menu__item--active">Pizza</a>
+          <a href="#" class="dishes-menu__item">Sushi</a>
+          <a href="#" class="dishes-menu__item">Salad</a>
+          <a href="#" class="dishes-menu__item">Dessert</a>
+          <a href="#" class="dishes-menu__item">Drinks</a>
+        </div>
+
+        <div class="dishes-cards">
+
+          <div class="dish-card">
+            <img src="img/menu/pizza-1.png" alt="Quattro formaggi" class="dish-card__img">
+            <div class="dish-info">
+              <div class="dish-info-top">
+                <span class="dish-info__name">Quattro formaggi</span>
+                <span class="dish-info__size">32cm</span>
+              </div>
+              <div class="dish-info-bottom">
+                <span class="dish-info__ingredients">Dough, Mozzarella, Cheddar, Blue, Parmesan</span>
+                <span class="dish-info__price">119 UAH</span>
+              </div>
+            </div>
+            <button class="basket"></button>
+          </div>
+
+          <div class="dish-card">
+            <img src="img/menu/pizza-2.png" alt="Карбонара" class="dish-card__img">
+            <div class="dish-info">
+              <div class="dish-info-top">
+                <span class="dish-info__name">Карбонара</span>
+                <span class="dish-info__size">32cm</span>
+              </div>
+              <div class="dish-info-bottom">
+                <span class="dish-info__ingredients">Dough, Mozzarella, Cheddar, Blue, Parmesan</span>
+                <span class="dish-info__price">119 UAH</span>
+              </div>
+            </div>
+            <button class="basket--active"></button>
+          </div>
+
+          <div class="dish-card">
+            <div class="dish-card__hit">Хiт</div>
+            <img src="img/menu/pizza-3.png" alt="Філадельфія селмон" class="dish-card__img">
+            <div class="dish-info">
+              <div class="dish-info-top">
+                <span class="dish-info__name">Філадельфія селмон</span>
+                <span class="dish-info__size">32cm</span>
+              </div>
+              <div class="dish-info-bottom">
+                <span class="dish-info__ingredients">Dough, mozzarella, barrel, eggs, Parmesan cheese</span>
+                <span class="dish-info__price">119 UAH</span>
+              </div>
+            </div>
+            <button class="basket"></button>
+          </div>
+
+          <div class="dish-card">
+            <img src="img/menu/pizza-4.png" alt="Ді маре" class="dish-card__img">
+            <div class="dish-info">
+              <div class="dish-info-top">
+                <span class="dish-info__name">Ді маре</span>
+                <span class="dish-info__size">32cm</span>
+              </div>
+              <div class="dish-info-bottom">
+                <span class="dish-info__ingredients">Dough, mozzarella, barrel, eggs, Parmesan cheese</span>
+                <span class="dish-info__price">119 UAH</span>
+              </div>
+            </div>
+            <button class="basket"></button>
+          </div>
+
+          <div class="dish-card">
+            <img src="img/menu/pizza-5.png" alt="Кватро формаджіо" class="dish-card__img">
+            <div class="dish-info">
+              <div class="dish-info-top">
+                <span class="dish-info__name">Кватро формаджіо</span>
+                <span class="dish-info__size">32cm</span>
+              </div>
+              <div class="dish-info-bottom">
+                <span class="dish-info__ingredients">Dough, Mozzarella, Cheddar, Blue, Parmesan</span>
+                <span class="dish-info__price">119 UAH</span>
+              </div>
+            </div>
+            <button class="basket"></button>
+          </div>
+
+          <div class="dish-card">
+            <img src="img/menu/pizza-6.png" alt="Кватро формаджіо" class="dish-card__img">
+            <div class="dish-info">
+              <div class="dish-info-top">
+                <span class="dish-info__name">Кватро формаджіо</span>
+                <span class="dish-info__size">32cm</span>
+              </div>
+              <div class="dish-info-bottom">
+                <span class="dish-info__ingredients">Dough, Mozzarella, Cheddar, Blue, Parmesan</span>
+                <span class="dish-info__price">119 UAH</span>
+              </div>
+            </div>
+            <button class="basket"></button>
+          </div>
+
+          <div class="dish-card">
+            <img src="img/menu/pizza-7.png" alt="Кватро формаджіо" class="dish-card__img">
+            <div class="dish-info">
+              <div class="dish-info-top">
+                <span class="dish-info__name">Кватро формаджіо</span>
+                <span class="dish-info__size">32cm</span>
+              </div>
+              <div class="dish-info-bottom">
+                <span class="dish-info__ingredients">Dough, Mozzarella, Cheddar, Blue, Parmesan</span>
+                <span class="dish-info__price">119 UAH</span>
+              </div>
+            </div>
+            <button class="basket"></button>
+          </div>
+
+          <div class="dish-card">
+            <img src="img/menu/pizza-8.png" alt="Кватро формаджіо" class="dish-card__img">
+            <div class="dish-info">
+              <div class="dish-info-top">
+                <span class="dish-info__name">Кватро формаджіо</span>
+                <span class="dish-info__size">32cm</span>
+              </div>
+              <div class="dish-info-bottom">
+                <span class="dish-info__ingredients">Dough, mozzarella, barrel, eggs, Parmesan cheese</span>
+                <span class="dish-info__price">119 UAH</span>
+              </div>
+            </div>
+            <button class="basket"></button>
+          </div>
+
+        </div>
+
+        <button class="dishes__load-btn">
+          <img src="img/menu/load-btn.png" alt="Загрузить ещё">
+        </button>
+
+      </section>
+    </div>
+
+    <div class="slider">
+      <div class="slider-photos">
+
+        <div class="slider-photos__slide">
+          <img src="img/menu/inst-img-1.jpg" alt="" class="slider-photos__img">
+        </div>
+
+        <div class="slider-photos__slide">
+          <img src="img/menu/inst-img-2.jpg" alt="" class="slider-photos__img">
+        </div>
+
+        <div class="slider-photos__slide">
+          <img src="img/menu/inst-img-3.jpg" alt="" class="slider-photos__img">
+        </div>
+
+        <div class="slider-photos__slide">
+          <img src="img/menu/inst-img-4.jpg" alt="" class="slider-photos__img">
+        </div>
+
+        <div class="slider-photos__slide">
+          <img src="img/menu/inst-img-1.jpg" alt="" class="slider-photos__img">
+        </div>
+
+        <div class="slider-photos__slide">
+          <img src="img/menu/inst-img-2.jpg" alt="" class="slider-photos__img">
+        </div>
+
+        <div class="slider-photos__slide">
+          <img src="img/menu/inst-img-3.jpg" alt="" class="slider-photos__img">
+        </div>
+
+        <div class="slider-photos__slide">
+          <img src="img/menu/inst-img-4.jpg" alt="" class="slider-photos__img">
+        </div>
+
+      </div>
+
+      <div class="slider-info">
+        <a href="#" class="slider-info__text">Instagram: <span class="slider-info__link">@classic_kovel</span></a>
+      </div>
+    </div>
   </div>
 
-  <script src="main.js "></script>
+  <section class="order">
+    <div class="scene-2">
+      <div class="container">
+
+        <div class="order-info">
+          <h2 class="h2-title order-info__title">Fill out the form <br> and we will call you</h2>
+          <div class="order-input">
+            <label class="name-label" for="order-name"></label>
+            <input class="order-input__name" id="order-name" placeholder="Your name">
+            <label class="phone-label" for="order-phone"></label>
+            <input class="order-input__phone" id="order-phone" placeholder="Phone number">
+            <button class="order-input__btn"><span class="order-input__call">Сall back</span></button>
+          </div>
+        </div>
+
+        <div class="order-parallax">
+          <div class="order-parallax__car">
+            <img src="img/order/car.png" class="order-parallax__car-img" alt="Автомобиль">
+          </div>
+          <div data-speed="10" class="layer order-parallax__leafs">
+            <img src="img/order/leafs.png" alt="Листья">
+          </div>
+          <div data-speed="30" class="layer order-parallax__pepper">
+            <img src="img/order/pepper.png" alt="Перец">
+          </div>
+          <div data-speed="50" class="layer order-parallax__vegitables">
+            <img src="img/order/vegitables.png" alt="Овощи">
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-info">
+        <span class="footer-info__copyright">&#169; Classic Family Restaurant</span>
+        <a href="#" class="footer-info__logo">
+          <img src="img/logo.png" alt="Classic сім'я ресторанів">
+        </a>
+        <span class="footer-info__authorship">
+          Made by <a href="#" class="footer-info__author">DDM</a>
+        </span>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script src="js/parallax.min.js"></script>
+  <script>
+    var scene = $('#scene').get(0);
+    var parallaxInstance = new Parallax(scene);
+  </script>
+  <script src="js/main.js"></script>
+  <script src="js/slick.js"></script>
+  <script src="js/slider.js"></script>
 </body>
 
 </html>
