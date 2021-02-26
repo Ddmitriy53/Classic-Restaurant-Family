@@ -45,6 +45,10 @@ img {
   padding-top: 25px;
 }
 
+.logo {
+  margin-left: 112px;
+}
+
 .first-block,
 .dish-info__size,
 .dish-info__ingredients,
@@ -521,11 +525,6 @@ img {
   padding: 17px;
 }
 
-.basket,
-.basket-active {
-  background-position-x: 56%;
-}
-
 .basket {
   border: 2px solid #ECEEF6;
   background: #FFFFFF url('../img/menu/basket.png') center no-repeat;
@@ -539,6 +538,11 @@ img {
   background: #F77A4A url('../img/menu/basket-active.png') center no-repeat;
   border: 2px solid #F77A4A;
   box-shadow: 0px 4px 8px rgba(205, 71, 41, 0.26);
+}
+
+.basket,
+.basket-active {
+  background-position-x: 56%;
 }
 
 .basket--active:hover {
@@ -1053,7 +1057,7 @@ img {
   .info-btns {
     right: 30px;
     bottom: 20px;
-    }
+  }
 
   .basket-main__img {
     padding: 10px;
@@ -1271,7 +1275,7 @@ img {
   .info-btns {
     right: 30px;
     bottom: 20px;
-    }
+  }
 
   .basket-main__img {
     padding: 10px;
@@ -1385,9 +1389,9 @@ img {
   }
 
   .info-btns {
-      position: absolute;
-      right: 11%;
-      top: 0;
+    position: absolute;
+    right: 11%;
+    top: 0;
   }
 
   .phone-small {
